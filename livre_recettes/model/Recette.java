@@ -3,6 +3,7 @@ package livre_recettes.model;
 public class Recette {
 	private int noteCourante = 0;
 
+
 	private String nomRecette = null;
 
 	public Recette(String nomRecette) {
