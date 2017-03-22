@@ -1,6 +1,6 @@
 package livre_recettes.model;
 
-public class Recette {
+public class Recette implements Comparable<Recette> {
 	private int noteCourante = 0;
 
 
@@ -23,5 +23,10 @@ public class Recette {
 	
 	public String getNom() {
 		return nomRecette;
+	}
+	@Override
+	public int compareTo(Recette o) {
+		return this.getNom().compareTo(o.getNom());
+		
 	}
 }

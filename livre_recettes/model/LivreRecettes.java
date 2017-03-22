@@ -34,6 +34,13 @@ public class LivreRecettes {
 		for (Recette r : livreOrdonneParNoteRecettes ) {
 			System.out.println("recette : " + r.getNom() + " -- " + r.getNote());
 		}
+		
+		System.out.println("Classement des recettes par ordre alphabétique :");
+		ArrayList<Recette> livreOrdonneParNomDeRecettes = new ArrayList<Recette> (livre);
+		Collections.sort(livreOrdonneParNomDeRecettes);
+		for (Recette r : livreOrdonneParNomDeRecettes ) {
+			System.out.println("recette : " + r.getNom() + " -- " + r.getNote());
+		}
 	}
 	
 	public Comparator<Recette> getComparateurParNotes() {
@@ -48,4 +55,5 @@ public class LivreRecettes {
         };
 		
 	}
+
 }
