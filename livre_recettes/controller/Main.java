@@ -20,7 +20,8 @@ public class Main {
 		recette2.setNote(5);
 		recette3.setNote(3);
 		monLivreDeRecettes.affiche();
-		monLivreDeRecettes.afficheParNote();;
+		monLivreDeRecettes.afficheParNote();
+		monLivreDeRecettes.afficheParNom();;
 	}
 
 }

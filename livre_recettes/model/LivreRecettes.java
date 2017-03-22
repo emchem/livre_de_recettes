@@ -34,7 +34,14 @@ public class LivreRecettes {
 		for (Recette r : livreOrdonneParNoteRecettes ) {
 			System.out.println("recette : " + r.getNom() + " -- " + r.getNote());
 		}
-		
+	}
+
+	public void afficheParNom() {
+		if (livre.isEmpty()) {
+			System.out.println("Aucune recette");
+			return;
+		}
+			
 		System.out.println("Classement des recettes par ordre alphabétique :");
 		ArrayList<Recette> livreOrdonneParNomDeRecettes = new ArrayList<Recette> (livre);
 		Collections.sort(livreOrdonneParNomDeRecettes);
